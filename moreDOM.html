@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find change edit delete</title>
+</head>
+<body>
+    
+    <a href="#">vist google</a>
+
+    <div id="div1" style="background-color: aquamarine;">
+        <h1>hello</h1>
+        <h1>googdbye</h1>
+    </div>
+
+    <script>
+        var link = document.getElementsByTagName("a")[0];
+        document.write(link);
+        document.write(link.innerHTML);
+        link.style.textDecoration = "none";
+        link.style.color = "green";
+        link.style.fontWeight = "bolder";
+        link.href = "google.com";
+        document.write(link.href);
+
+        var h1 = document.getElementsByTagName("h1")[0];
+
+        //crate new html element
+        var newHeading = document.createElement("h2");
+        var text = document.createTextNode("new h3");
+        newHeading.appendChild(text);
+
+        var div = document.getElementById("div1");
+
+        div.appendChild(newHeading);
+
+        //remove element goodbye
+
+        var delHead = document.getElementsByTagName("h1")[1];
+        div.removeChild(delHead);
+
+        //first h1 er upore bosat cachhi
+        var newHeading1 = document.createElement("h2");
+        var text1 = document.createTextNode("new head before");
+        newHeading1.appendChild(text1);
+        var head0 = document.getElementsByTagName("h1")[0];
+        //-----
+
+        div.style.backgroundColor = "cyan";
+
+        div.insertBefore(newHeading1,head0);
+    </script>
+
+</body>
+</html>

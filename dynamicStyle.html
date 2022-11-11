@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add style</title>
+    <style>
+        .para-style{
+            color: red;
+            font-size: 3rem;  
+        }
+    </style>
+</head>
+<body>
+    <p id="para">this is a paragraph</p>
+    <button onclick="addStyle()">add style</button>
+    <button onclick="removeStyle()">remove style</button>
+
+    <script>
+        var v = document.querySelector("#para");
+        function addStyle(){
+            v.classList.add("para-style");
+        }
+        function removeStyle(){
+            v.classList.remove("para-style");
+        }
+    </script>
+</body>
+</html>

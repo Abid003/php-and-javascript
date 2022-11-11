@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        .style{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="night">
+   
+</div>
+
+
+    <button class="btn" onclick="showImg()">show images</button>
+
+    <div class="my-div" style="display: none;">
+        
+        <img src="img/1.png" alt="" height="300px" width="500px">
+        <h3>1. screen short from pc builders</h3>
+        <button onclick="previous()">previous</button>
+        <button onclick="next()">next</button>
+        
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus dolor dolorem. Numquam id explicabo nostrum officiis maxime repellendus veritatis, beatae consequuntur sequi expedita! Hic aut doloribus quas magni! Corporis.</p>
+    <button onclick="darkmode()">dark mode</button>
+</body>
+
+
+<script>
+
+    var photos = ["img/1.png", "img/2.png", "img/3.png", "img/4.png", "img/5.png", "img/6.png", "img/7.png", "img/8.png", "img/9.png"];
+    var description = ["1. screen short from pc builders"
+    ,"2. an UFO ","3. an alien gun","4. baidu pc faster ss","5. download death note","6. visit brazil","7. pubg mobile ss","8. pubg mobile ss 2","9. Typing speed"];
+    var imgTag = document.querySelector("img");
+    var hTag = document.querySelector("h3");
+    var count = 0;
+
+
+    function previous() {
+
+        count--;
+        if (count < 0) {
+            count = photos.length - 1;
+            imgTag.src = photos[count];
+            hTag.innerHTML = description[count];
+        } else {
+            imgTag.src = photos[count];
+            hTag.innerHTML = description[count];
+        }
+
+    }
+
+    function next() {
+        count++;
+        if (count >= photos.length) {
+            count = 0;
+            imgTag.src = photos[count];
+            hTag.innerHTML = description[count];
+        } else {
+            imgTag.src = photos[count];
+            hTag.innerHTML = description[count];
+        }
+
+    }
+
+    var flag = 0;
+    function showImg(){
+         flag = flag+1;
+      var div =   document.querySelector(".my-div");
+      var btn = document.querySelector(".btn");
+      div.style.padding = "20px";
+
+      if(flag%2 != 0){
+        div.style.display = "block";
+        btn.innerHTML = "hide images";
+      }else{
+        div.style.display = "none";
+        btn.innerHTML = "show images";
+      }
+
+
+      function darkmode(){
+        flag = flag+1;
+        if(flag%2 == 0){
+            var p = document.querySelector("p");
+            p.classList.add("style");
+        }
+
+      }
+
+
+      
+    }
+
+</script>
+
+</html>

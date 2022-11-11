@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>This is an example of js fuction</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>
+        function f1(a, b) {
+            return a * b;
+        }
+
+        var a = f1(32, 4);
+
+        var c = toCelsius(11);
+        document.getElementById("demo").innerHTML = "multiplication = " + a;
+
+        document.getElementById("demo1").innerHTML=
+        "the ans is = "+c;
+
+
+        function toCelsius(f){
+            return  (5/9) * (f-32);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>on click </title>
+</head>
+
+<body>
+    <button onclick="img1()">pic 1</button>
+    <button onclick="img2()">pic 2</button>
+    <br>
+
+    <img id="image" src="#" alt="" height="30px" width="20px">
+    <script>
+
+
+        var v1 = document.querySelector("#image");
+        function img1() {
+
+            v1.src = "img/gun.jpg";
+
+        }
+        function img2() {
+            v1.src = "img/vc.jpg";
+        }
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+
+    <style>
+        .mystyle{
+            color:  tomato;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <button>click</button>
+    <h1>click here to change style</h1>
+
+    <script>
+        document.querySelector("button").addEventListener("click",function (){
+            alert("hello!");
+        });
+
+        var heading = document.querySelector("h1");
+        heading.addEventListener("mouseover",function (){
+            heading.classList.add("mystyle");
+        });
+        heading.addEventListener("mouseout",function (){
+            heading.classList.remove("mystyle");
+        });
+
+        
+    </script>
+</body>
+</html>

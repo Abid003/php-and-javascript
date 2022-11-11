@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document object model</title>
+</head>
+<body>
+    <h1 id="head1">this is a heading 1</h1>
+    <h1 id="head2">heading 2 </h1>
+    <p class="p1">paragraph1</p>
+    <p class="p1">paragraph2</p>
+    <script>
+
+        ///get element by id
+
+var hading = document.getElementById("head1");
+
+hading.innerHTML = "hellow";
+
+var para = document.getElementById("p1");
+para.innerHTML = "paragraph changed";
+
+///get elements by tag name returns an array
+document.getElementsByTagName("h1");
+document.getElementsByTagName("h1")[0].innerHTML = "hi";
+
+//get elements by class name etao array return kore
+document.getElementsByClassName("p1").innerHTML[1] ="paragarph changed";
+
+var a = document.getElementsByTagName("p");
+document.write(a);
+
+    </script>
+
+
+</body>
+</html>

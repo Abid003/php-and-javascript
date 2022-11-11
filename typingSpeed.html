@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typing speed</title>
+    <style>
+        * {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">Typing speed test</h1>
+    <input id="input" onkeypress="change()" type="text" size="80dp" placeholder="start typing">
+    <h1>Timer - <span id="timer">60</span>s</h1>
+    <h1>Speed - <span id="speed">0</span> cpm</h1>
+    <h1>Result - <span id="result">0</span> cpm</h1>
+    <div id="test"></div>
+
+
+    <script>
+        var input = document.getElementById("input");
+        var speed = document.getElementById("speed");
+        var result = document.getElementById("result");
+        var timer = document.getElementById("timer");
+        function change() {
+            speed.innerHTML = input.value.length;
+            if(input.value.length == 1){
+                countdown();
+            }
+        }
+
+
+
+        async function countdown() {
+            for (let i = 10; i >= 0; --i) {
+
+                await waitforme(1000);
+                timer.innerHTML = i;
+
+
+
+
+            }
+        }
+
+
+        function waitforme(ms) {
+            return new Promise(resolve => {
+                setTimeout(() => { resolve('') }, ms);
+            })
+
+        }
+
+    </script>
+
+</body>
+
+</html>

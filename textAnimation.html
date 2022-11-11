@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text animation</title>
+</head>
+
+<body>
+    <h1 id="div1">
+    </h1>
+
+    <script>
+
+        var text = 'Die bringt gezeigt fühlt im menge gedrta'
+        var div1 = document.getElementById('div1');
+        var count = 0;
+        var tl = text.length;
+        var t2 = '|'
+        function waitforme(ms) {
+            return new Promise(resolve => {
+                setTimeout(() => { resolve('') }, ms);
+            })
+
+        }
+
+
+
+
+        async function printy() {
+
+
+
+
+            while (1) {
+
+                for (let i = 0; i <= text.length * 2; ++i) {
+
+                    if (i > text.length) {
+                        await waitforme(100);
+                        tl--;
+                        div1.innerHTML = text.substring(0, tl)+t2;
+                    } else {
+                        await waitforme(100);
+                        div1.innerHTML = text.substring(0, i)+t2;
+                    }
+                }
+                tl = text.length;
+            }
+
+
+        }
+
+
+
+
+
+        printy();
+
+
+
+    </script>
+</body>
+
+</html>

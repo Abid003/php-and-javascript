@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(image/1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    font-size: 45px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+    color: yellow;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-family: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: greenyellow;
+    font-family: Arial;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+.Search {
+    width: 330px;
+    float: left;
+    margin: 270px;
+}
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid white;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: right;
+    padding: 2px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.btn {
+    width: 90px;
+    height: 50px;
+    background: green;
+    border: 1px solid darkred;
+    margin-top: 13px;
+    border-right: none;
+    color: white;
+    font-size: 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline : none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content.par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family: 'Time New Roman';
+    font-size: 40px;
+    padding-left: 15px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content.cn {
+    width: 160px;
+    height: 40px;
+    background: yellow;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content.cn.a {
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: yellow;
+}
+
+.content span {
+    color: yellow;
+    font-size: 65px;
+}
+
+.form {
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 20px;
+}
+
+.form input  {
+ margin-top: 20px;
+ font-size: 12px;
+  padding: 8px 5px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+
+}
+.btn2 {
+    width: 90px;
+    height: 50px;
+    background: red;
+    border: 1px solid darkred;
+    margin-top: 13px;
+    border-right: none;
+    color: greenyellow;
+    font-size: 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.btn2 a
+{
+
+    color: white;
+}
+
+
+.signup {
+    width: 300px;
+    height: 550px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8)50%, rgba(0, 0, 0, 0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 500px;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+}
+
+.signup h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    background-color: yellow;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 20px;
+}
+
+.signup input  {
+ margin-top: 20px;
+ font-size: 12px;
+  padding: 8px 5px;
+  width: 200px;
+  border-radius: 5px;
+  outline: none;
+
+}
+.signup a {
+
+    color: whitesmoke;
+
+}
+.signup.btn2 {
+    width: 90px;
+    height: 50px;
+    background: red;
+    border: 1px solid darkred;
+    margin-top: 13px;
+    border-right: none;
+    color: greenyellow;
+    font-size: 25px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.signup .btn2 a
+{
+
+    color: black;
+}

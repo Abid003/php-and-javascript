@@ -1,0 +1,12 @@
+ 
+ *{
+     box-sizing: border-box;
+ }
+ img {
+    height: 20rem;
+    width: 20rem;
+}
+.box{
+    float: left;
+    margin: 5px;
+}

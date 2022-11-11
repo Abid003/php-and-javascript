@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+ 
+}
+
+#content {
+ height: 400px;
+ width: 200px;
+ background: red;
+ overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<p>Click the buttons to scroll to the top or to the bottom of the element with id="content".</p>
+
+<button onclick="scrollToTop()">Scroll to the top of the element</button>
+<button onclick="scrollToBottom()">Scroll to the bottom of the element</button>
+
+<div id="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laboriosam provident aspernatur temporibus ratione, excepturi non consequatur tempore quos assumenda vel nostrum explicabo debitis rem totam sint illo rerum minima.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magni sequi porro, sit expedita tempore velit? Quis cupiditate voluptatum optio nam fuga doloribus ab, numquam cumque! Velit nisi culpa necessitatibus?
+    </p>
+</div>
+
+<script>
+var elmnt = document.getElementById("content");
+
+function scrollToTop() {
+  elmnt.scrollIntoView(true); // Top
+}
+
+function scrollToBottom() {
+ // Bottom
+var objDiv = document.getElementById("content");
+objDiv.scrollTop = objDiv.scrollHeight;
+}
+</script>
+
+</body>
+</html>

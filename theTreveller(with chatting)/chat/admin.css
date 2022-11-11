@@ -1,0 +1,95 @@
+*{
+    color: #F79F1F;
+}
+
+#admin{
+    background-color: #F79F1F;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    color: whitesmoke;
+    border-radius: 10px;
+    max-width: 200px;
+    display:block;
+    float: left;
+ }
+ #user{
+     background: rgb(243, 243, 243);
+     text-align: left;
+     padding: 10px;
+     margin: 5px;
+     width: auto;
+     display:block;
+     max-width: 500px;
+     float: right;
+     border-radius: 10px;
+     
+ 
+  
+  }
+  #user:hover{
+      box-shadow: 1px 1px 5px rgb(126, 126, 126);
+  }
+  #admin:hover{
+    box-shadow: 1px 1px 5px rgb(173, 173, 173);
+}
+#time-admin{
+    font-size: 10px;
+    width: 10px;
+  
+}
+#time-user{
+    font-size: 10px;
+    width: 40px;
+
+   float: right;
+  
+}
+#time-admin{
+    font-size: 10px;
+    width: 40px;
+
+   float: left;
+  
+}
+
+td a{
+    display:block;
+}
+input{
+    background-color: #F79F1F;
+    color: white;
+    border: none;
+    width: auto;
+}
+::placeholder {
+    color: #fff0d9;
+  }
+  .head{
+
+    text-align: center;
+      width: auto;
+    margin:  0 auto;
+    margin-bottom: 10px;
+ 
+  }
+  .head h1{
+      margin: 1px;
+      padding: 1px;
+      width: auto;
+    
+  }
+  .head hr{
+      height: 2px;
+      width: 200px;
+      border: none;
+      background-color: #F79F1F;
+  }
+ a{
+     background-color: #F79F1F;
+     color: whitesmoke;
+     text-decoration: none;
+     width: 100px;
+     padding: 5px;
+
+ }

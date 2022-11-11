@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.recent,.top{
+    height: auto;
+    padding: 5px;
+    border: 1px solid black ;
+    margin: 5px;
+}

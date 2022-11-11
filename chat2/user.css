@@ -1,0 +1,38 @@
+#user{
+    background-color: #F79F1F;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+    color: whitesmoke;
+    float: left;
+
+    border-radius: 10px;
+    max-width: 500px;
+    display: block;
+ }
+ #admin{
+     background: rgb(243, 243, 243);
+     text-align: left;
+     float: right;
+     padding: 10px;
+         max-width: 500px;
+     margin: 5px;
+     width: auto;
+     border-radius: 10px;
+     display: block;
+  }
+  #user:hover{
+      box-shadow: 1px 1px 5px rgb(126, 126, 126);
+  }
+  #admin:hover{
+    box-shadow: 1px 1px 5px rgb(173, 173, 173);
+}
+#time-user,#time-admin{
+    font-size: 10px;
+    width: 10px;
+  
+}
+a{
+    padding: 5px;
+    margin-top: 5px;
+}

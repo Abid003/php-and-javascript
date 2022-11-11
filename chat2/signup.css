@@ -1,0 +1,52 @@
+*{
+   color: #F79F1F;
+   text-align: center;
+   
+}
+
+.body{
+   height: 500px;
+   width: 300px;
+   margin: 0 auto;
+   border: 2px solid #F79F1F;
+  
+
+}
+label{
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   padding: 5px;
+ 
+}
+input{
+   display: block;
+   margin: 0 auto;
+   border: 2px solid #F79F1F;
+   padding: 4px;
+ 
+}
+::placeholder{
+   color: #F79F1F;
+   opacity: 50%;
+}
+h2{
+   background-color: #F79F1F;
+   color: whitesmoke;
+   margin-top: 0px;
+   text-align: center;
+}
+p{
+   margin: 1px;
+   padding: 1px;
+   font-size: 15px;
+   text-align: center;
+   margin-top: 20px;
+}
+a{
+   text-align: center;
+}
+#submit{
+   background-color: #F79F1F;
+   color: white;
+}

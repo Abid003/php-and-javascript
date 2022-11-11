@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(236, 235, 232);
+    margin: 0px;
+    padding: 0px;
+}
+.head{
+    background-color: aqua;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.head p, h3{
+    margin: 0px;
+    padding: 0px;
+
+}
+.head p{
+    font-size: 15px;
+}
+
+.body{
+    height: 800px;
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+.chatting{
+    height: 755px;
+    width: 1200px;
+    overflow: auto;
+}
+
+.chat{
+    float: right;
+}
+
+textarea{
+    width: 1050px;
+    height: 40px;
+    float: left;
+    resize: none;
+
+}
+input{
+    float: left;
+    width: 100px;
+    height: 45px;
+}
+
+table{
+   text-align: left;
+}
+
+ #message{
+
+   float: right;
+background-color: rgb(82, 82, 255);
+border: 2px solid red;
+color: whitesmoke;
+padding: 10px;
+border-radius: 20px;
+margin: 10px 0px;
+max-width: 250px;
+ 
+}
+tr #time{
+    color: blue;
+    font-size: 15px;
+
+}
+.input{
+    
+}

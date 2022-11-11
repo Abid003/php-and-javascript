@@ -1,0 +1,18 @@
+.slideshow-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slideshow-elements{
+    text-align: center;
+
+}
+.slideshow-element{
+
+}
+
+.slideshow-element i, h2{
+    font-size: 8rem;
+
+}

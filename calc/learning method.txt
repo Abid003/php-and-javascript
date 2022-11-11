@@ -1,0 +1,13 @@
+resolution theorem proving proportional logic
+
+conjucative normal form 
+eliminate implication and biconditionals using formulas
+
+(p<->q) ==> (p->q) ^ (q->p)
+
+
+resolution is a theorem porving tecnique thet proceeds by building refutation proceeds by building contradictions.
+
+resolution is used, if there are various statements are given, and we need to porve a conclusion of those statements.
+
+proportional resolution

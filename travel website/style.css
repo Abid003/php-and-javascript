@@ -1,0 +1,39 @@
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 10px;
+   
+}
+.navbar{
+    float: right;
+    margin-top: 20px;
+    
+}
+.navbar a{
+    margin: 10px 5px;
+    text-decoration: none;
+}
+.content h3{
+    text-align: center;
+}
+.content p{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+.content .btn{
+    display: block;
+   text-align: center;
+   font-size: 1.3rem;
+}
+.heading{
+    text-align: center;
+}
+
+.box-container{
+    text-align: center;
+}
+
+.box-container ul li{
+    list-style: none;
+}
